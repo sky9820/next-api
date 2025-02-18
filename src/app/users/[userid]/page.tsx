@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 async function getUser(id) {
     let data = await fetch(`http://192.168.7.16:3000/api/users/${id}`);
@@ -11,9 +12,16 @@ export default async function Page({params}: { params: { userid: string } }){
     return(
         <div className="userlists">
             <h1>User Detail:</h1>
-            <p>User Name: {user.name}</p>
-            <p>User Email: {user.email}</p>
-            <p>User Age: {user.age}</p>
+            
+            <p><strong>User Name:</strong> {user.name}</p>
+            <p><strong>User Email:</strong> {user.email}</p>
+            <p><strong>User Age:</strong> {user.age}</p>
+            
+            <br />
+            <br />
+            <br />
+            <Link className="link" href="/users">Back to User List</Link>
+
         </div>
     )
 }

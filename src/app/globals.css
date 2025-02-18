@@ -23,9 +23,17 @@ body {
 h1{
   font-size: 25px;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .userlists {
   margin: 0 auto;
   padding: 40px;
+}
+
+a.link {
+  background: #6f6ff7;
+  padding: 8px 15px;
+  color: #fff;
+  border-radius: 3px;
 }
