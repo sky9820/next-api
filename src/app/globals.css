@@ -19,3 +19,13 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+h1{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.userlists {
+  margin: 0 auto;
+  padding: 40px;
+}
