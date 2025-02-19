@@ -9,17 +9,17 @@ export default function Page(){
 
     const addUser = async ()=>{
         console.log(name, age, email);
-        let response = await fetch("http://192.168.7.16:3000/api/users",{
+        let response = await fetch("/api/users",{
             method: "POST",
             body: JSON.stringify({name, age, email})
         });
-        response = await response.json();
-        if(response.success){
+        const data = await response.json();
+        if(data.success){
             alert('User Added');
         }else{
             alert('Some Error in adding user data, please try again.');
         }
-        console.log(response);
+        //console.log(response);
     } 
     return(
         <div  className="userlists align-center">
