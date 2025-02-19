@@ -31,9 +31,23 @@ h1{
   padding: 40px;
 }
 
-a.link {
+a.link, button.link {
   background: #6f6ff7;
   padding: 8px 15px;
   color: #fff;
   border-radius: 3px;
+}
+.userlists.align-center {
+  text-align: center;
+  margin: 0 auto;
+  width: 400px;
+}
+.userlists input {
+  border: 1px solid #ccc;
+  display: block;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 15px;
+  width: 100%;
 }
